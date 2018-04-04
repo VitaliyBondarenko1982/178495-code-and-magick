@@ -16,6 +16,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "npm": "^5.8.0",
     "test": "^0.6.0"
   },
   "scripts": {
