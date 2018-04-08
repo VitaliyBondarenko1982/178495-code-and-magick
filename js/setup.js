@@ -1,7 +1,8 @@
 'use strict';
 
+var NUMBER = 4;
+
 var dataWizards = {
-  number: 4,
   names: ['Иван', 'Хуан Себастьян', 'Мария', 'Кристоф', 'Виктор', 'Юлия', 'Люпита', 'Вашингтон'],
   surnames: ['да Марья', 'Верон', 'Мирабелла', 'Вальц', 'Онопко', 'Топольницкая', 'Нионго', 'Ирвинг'],
   coatColors: ['rgb(101, 137, 164)', 'rgb(241, 43, 107)', 'rgb(146, 100, 161)', 'rgb(56, 159, 117)', 'rgb(215, 210, 55)', 'rgb(0, 0, 0)'],
@@ -35,7 +36,7 @@ var getRandomElement = function (array) {
 
 var createWizards = function () {
   var wizards = [];
-  for (var i = 0; i < dataWizards.number; i++) {
+  for (var i = 0; i < NUMBER; i++) {
     wizards.push({
       name: getRandomElement(dataWizards.names),
       surname: getRandomElement(dataWizards.surnames),
